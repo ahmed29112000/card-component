@@ -1,0 +1,111 @@
+body{
+  background-color: #896f51;
+}
+@media (min-width: 1259px){
+  .cont{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+}
+.cont{
+  width: 100%;
+}
+.cont1{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-gap: 20px;
+  padding: 10px;
+}
+h1{
+  margin-left: 10px;
+  font-family: ui-monospace;
+  color: white;
+}
+.cont1 div{
+  background-size: 100% 100%;
+  height: 600px;
+  color: white;
+  font-family: monospace;
+  font-size: 22px;
+  font-weight: 100;
+  position: relative;
+  overflow: hidden;
+  transition: .5s;
+}
+.tow:hover,.three:hover,.one:hover{
+  background-size: 106% 106%;
+  background-origin: 50% 50%;
+}
+.cont1 .one{
+  background-image: url(./photo_2023-02-05_22-12-41.jpg);
+}
+.cont1 .tow{
+  background-image: url(./photo_2023-02-05_22-12-36.jpg);
+}
+.cont1 .three{
+  background-image: url(./photo_2023-02-05_22-12-32.jpg);
+}
+h2{
+  width: fit-content;
+  margin: 0px;
+  margin-left: 0px;
+  transform: rotate(270deg);
+  position: absolute;
+  top: 40px;
+  right: 2px;
+  border: solid 1px;
+  font-weight: 100;
+  padding: 10px;
+}
+div .position{
+  display: flex;
+  width: 100%;
+  height: 95%;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-left: 20px;
+  padding-bottom: 30px;
+  position: absolute;
+  top: 13%;
+}
+.tow:hover div.position,.three:hover div.position,.one:hover div.position{
+  background-color: rgba(0, 0, 0, 0.253);
+  top: 0%;
+}
+p{
+  margin: 5px;
+}
+h3{
+  font-size: 40px;
+  margin: 3px;
+  margin-bottom: 17px;
+  position: relative;
+}
+h3::before{
+  content: "";
+  border-bottom: 2px solid #9e9e9e;
+  width: 25%;
+  position: absolute;
+  bottom: -9px;
+  transition: .8s .3s;
+}
+.tow:hover h3::before,.three:hover h3::before,.one:hover h3::before{
+  width: 85%;
+}
+div.hid{
+  display: flex;
+  justify-content: space-between;
+  height: 65px;
+  align-items: center;
+  /* transition: 50s 2s cubic-bezier(0.63, 0.01, 0.5, 1.08);
+  position: absolute; */
+}
+/* .tow:hover div.hid,.three:hover div.hid,.one:hover div.hid{
+
+} */
+h4{
+  position: absolute;
+  right: 71px;
+}
